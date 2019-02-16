@@ -6,3 +6,7 @@ An example of [user journey testing](https://martinfowler.com/bliki/UserJourneyT
 * [How to install Gauge](https://gauge.org/getting-started-guide/quick-install/)
 
 * [How to install Taiko](https://taiko.gauge.org/#quick-install)
+
+## Running the specifications
+
+`npm test`
