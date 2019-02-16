@@ -1,0 +1,26 @@
+version: 2.1
+executors:
+  circleci-gauge-executor:
+    docker:
+      - image: circleci/node:11.9.0-browsers
+
+jobs:
+  build:
+    working_directory: ~/gauge-taiko-journey-test-example
+    executor: circleci-gauge-executor
+    steps:
+      - checkout
+      - run: npm set prefix=/home/circleci/npm && echo 'export PATH=/home/circleci/npm/bin:$PATH' >> $BASH_ENV
+      - run: npm install -g npm@latest
+      - run: npm install
+      - run: npm install -g taiko
+      - run: npm install -g @getgauge/cli --unsafe-perm
+      - run: gauge install
+      - run: gauge telemetry off
+      - run: gauge run specs
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
