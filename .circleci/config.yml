@@ -18,6 +18,8 @@ jobs:
       - run: gauge install
       - run: gauge telemetry off
       - run: gauge run specs
+      - store_artifacts:
+          path: reports
 
 workflows:
   version: 2
