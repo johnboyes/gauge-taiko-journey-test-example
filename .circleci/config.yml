@@ -13,7 +13,6 @@ jobs:
       - run: npm set prefix=/home/circleci/npm && echo 'export PATH=/home/circleci/npm/bin:$PATH' >> $BASH_ENV
       - run: npm install -g npm@latest
       - run: npm install
-      - run: npm install -g taiko
       - run: npm install -g @getgauge/cli --unsafe-perm
       - run: gauge install
       - run: gauge telemetry off
