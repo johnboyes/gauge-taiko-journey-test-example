@@ -90,3 +90,7 @@ typings/
 
 # Visual Studio Code related
 .vscode/
+
+# Intellij
+.idea
+*.iml
