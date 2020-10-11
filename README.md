@@ -5,9 +5,9 @@ An example of [user journey testing](https://martinfowler.com/bliki/UserJourneyT
 
 ## Installation steps
 
-* [How to install Gauge](https://gauge.org/getting-started-guide/quick-install/)
+* [How to install Gauge](https://docs.gauge.org/getting_started/installing-gauge.html)
 
-* [How to install Taiko](https://taiko.gauge.org/#quick-install)
+* [How to install Taiko](https://docs.taiko.dev/installing/)
 
 ## Running the specifications
 
